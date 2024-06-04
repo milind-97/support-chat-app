@@ -39,7 +39,7 @@ const Sidebar = () => {
         }
     }
     return (
-        <div className='border-r border-slate-500 p-4 flex flex-col'>
+        <div className='p-4 flex flex-col bg-white rounded mr-5'>
             <form onSubmit={searchSubmitHandler} action="" className='flex items-center gap-2'>
                 <input
                     value={search}
@@ -47,7 +47,7 @@ const Sidebar = () => {
                     className='input input-bordered rounded-md' type="text"
                     placeholder='Search...'
                 />
-                <button type='submit' className='btn bg-zinc-700 text-white'>
+                <button type='submit' className='btn'>
                     <BiSearchAlt2 className='w-6 h-6 outline-none'/>
                 </button>
             </form>
